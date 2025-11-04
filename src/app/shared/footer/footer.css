@@ -1,0 +1,8 @@
+.ftr{margin-top:2rem;background:#0b1020;color:#cbd5e1}
+.wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.25rem 1rem}
+h4{color:#fff;margin:.25rem 0 .5rem}
+.social{display:flex;gap:.75rem}
+.social a{color:#cbd5e1;text-decoration:none}
+.social a:hover{color:#fff}
+.copy{text-align:center;border-top:1px solid #1e293b;padding:.75rem 1rem;color:#94a3b8}
+@media (max-width:768px){.wrap{grid-template-columns:1fr}}

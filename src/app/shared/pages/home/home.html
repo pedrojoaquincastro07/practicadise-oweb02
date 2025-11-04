@@ -1,0 +1,14 @@
+<section class="carousel">
+  <div class="viewport">
+    <div class="slides" [style.transform]="'translateX(-' + (active*100) + '%)'">
+      <div class="slide" *ngFor="let img of images; let i = index">
+        <img [src]="img" [alt]="'Auto ' + (i+1)" />
+      </div>
+    </div>
+  </div>
+  <button class="ctrl left"  (click)="prev()">‹</button>
+  <button class="ctrl right" (click)="next()">›</button>
+  <div class="dots">
+    <button *ngFor="let _ of images; let i = index" [class.active]="i===active" (click)="goTo(i)"></button>
+  </div>
+</section>
